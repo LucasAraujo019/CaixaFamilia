@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sorteio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <img src="images/p1.png" alt="">
+    </header>
+    <div class="c1">
+    <div class="container">
+        <h2>PARTICIPANTES</h2>
+        <div id="nomes-container">
+            <input type="text" id="nome" placeholder="Nome do Participante">
+            <button onclick="adicionar()">Adicionar</button>
+            <button onclick="resetar()">Refazer</button>
+        </div>
+        
+        <div id="lista-nomes"></div>
+        
+        <button id="sortear" onclick="sortear()">Sortear <img src="images/trevo.png" alt=""></button>
+        
+        <div id="resultado"></div>
+    
+    </div>
+</div>
+<footer>
+    <h4>© 2023 Lucas Araújo.</h4>
+</footer>
+	<script src="script.js"></script>
+</body>
+</html>

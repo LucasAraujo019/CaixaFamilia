@@ -1,0 +1,247 @@
+*  {
+    font-family: 'Roboto Mono', monospace;
+}
+body {
+    background-color: #F5F5F5;
+    margin: 0;
+    background-image: url(images/p2.png);
+    background-size: cover;
+
+    
+}
+.c1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    font-weight: 700;
+    position:fixed;
+    margin-bottom: 20px;
+    z-index: 9900;
+    top: 0;
+    background-color: #4EA63E;
+    
+    
+    
+   
+}
+.container {
+    max-width: 800px;
+    margin: 20px ;
+    padding: 50px;
+    background-color: #f3dfe8;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 100px;
+
+}
+
+#nomes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+#nome {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    
+}
+
+#nomes-container button:nth-child(1) {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+#nomes-container button:nth-child(1):hover {
+    background-color: #0069D9;
+}
+
+#nomes-container button:nth-child(2),
+#nomes-container button:nth-child(3) {
+    background-color: #16a1a1;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+#nomes-container button:nth-child(3){
+    background-color: #236ac8;
+}
+#nomes-container button:nth-child(2):hover {
+    background-color:  #007c7c;
+}
+
+#nomes-container button:nth-child(3):hover{
+    background-color: #064494;
+}
+#lista-nomes {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #000000;
+}
+
+#lista-nomes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+}
+
+#lista-nomes li {
+    margin-bottom: 5px;
+    list-style:none;
+}
+
+#lista-nomes li span {
+    margin-right: 10px;
+}
+
+#resultado {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+#sortear {
+    display: flex;
+    margin: 0 auto;
+    background-color: #28A745;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+}
+#sortear img {
+  padding-left: 5px;
+}
+
+
+#sortear:hover {
+    background-color: #218838;
+}
+
+#resetar {
+    background-color: #DC3545;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#resetar:hover {
+    background-color: #C82333;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100vw;
+  position:fixed;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  bottom: 0;
+  z-index: 9;
+  background-color: #4EA63E;
+}
+
+@media (min-width: 768px) {
+    .container {
+      max-width: 600px;
+    }
+  }
+  
+  /* ajusta o tamanho do cabeçalho em telas menores */
+  @media (max-width: 480px) {
+    header {
+      height: 50px;
+      font-size: 14px;
+    }
+  }
+  
+  /* ajusta o tamanho dos botões em telas menores */
+  @media (max-width: 480px) {
+    #nomes-container button {
+      font-size: 12px;
+      padding: 5px;
+      margin-top: 7px;
+      
+    }
+  }
+  
+  /* ajusta o tamanho da fonte da lista de nomes em telas menores */
+  @media (max-width: 600px) {
+    #lista-nomes {
+      font-size: 14px;
+    }
+    #nomes-container{
+        flex-direction: column;
+    }
+    #nomes-container button {
+        font-size: 12px;
+        padding: 5px;
+        margin: 5px;
+        
+      }
+  }
+  
+  /* ajusta a margem inferior da lista de nomes em telas menores */
+  @media (max-width: 480px) {
+    #lista-nomes {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* ajusta o tamanho do resultado em telas menores */
+  @media (max-width: 768px) {
+    #resultado {
+      font-size: 18px;
+    }
+  }
+  
+  /* ajusta o tamanho dos botões de ação em telas menores */
+  @media (max-width: 480px) {
+    #sortear,
+    #resetar {
+      font-size: 12px;
+      padding: 5px;
+    }
+  }
